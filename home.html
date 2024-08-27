@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .container .hover {
+      display: flex;
+      text-decoration: none;
+      list-style: none;
+      gap: 20px;
+    }
+    .logo {
+      font-size: 30px;
+      font-weight: 900;
+      font-style: italic;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    a:active {
+      color: red;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: blueviolet;
+      text-decoration: none;
+    }
+
+    .button {
+      background-color: blueviolet;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    .content {
+      display: flex;
+    }
+    .h1 {
+      font-size: 60px;
+    }
+    .p {
+      font-size: 20px;
+    }
+    .w-40 {
+      width: 40%;
+    }
+    .w-50 {
+      width: 50%;
+    }
+    .w-60 {
+      width: 60%;
+    }
+    .w-40 img {
+      width: 100%;
+    }
+    .w-60 button {
+      background-color: aliceblue;
+      border: none;
+      color: black;
+      text-align: center;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      padding: 15px 30px;
+    }
+    .brand-partner {
+      display: flex;
+      gap: 10px;
+    }
+    .brand-partner img {
+      width: 210px;
+      height: 120px;
+    }
+    .main {
+      display: flex;
+    }
+    .font {
+      font-size: 15px;
+      width: 50%;
+    }
+    .font h4 {
+      font-size: 25px;
+    }
+    .image {
+      width: 50%;
+    }
+    .image img {
+      width: 100%;
+    }
+    .one {
+      display: flex;
+    }
+    .two {
+      width: 50%;
+    }
+    .two img {
+      width: 100%;
+    }
+    .three {
+      width: 50%;
+    }
+    .three h5 {
+      font-size: 25px;
+    }
+    .list a {
+      color: blueviolet;
+    }
+    .list {
+      list-style: none;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .container {
+      display: flex;
+    }
+    .aa {
+      width: 50%;
+    }
+    .bb {
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .card {
+      width: 50%;
+    }
+    .fig {
+      font-size: 70px;
+      text-align: center;
+      color: grey;
+    }
+    .icon {
+      display: flex;
+    }
+    .height {
+      text-align: center;
+      padding: 0 395px;
+    }
+    .check {
+      display: flex;
+    }
+    /* .cardlist {
+      padding-left: 0%;
+    } */
+    .cardlist li {
+      list-style-type: none;
+      margin: 10px;
+      text-align: center;
+    }
+    .firstcard {
+      border: 1px solid;
+      border-color: rgb(243 243 243);
+      box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+        0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+      text-align: center;
+    }
+    .handp {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .handp h1 {
+      margin: 0;
+    }
+    .caaards {
+      display: flex;
+      gap: 30px;
+      padding-left: 3%;
+      padding-right: 3%;
+      /* width: 95%;
+      height: 90%; */
+      background-color: white;
+    }
+    .check_list {
+      display: flex;
+      align-items: center;
+    }
+    .btn_padding {
+      margin: 15px 0;
+      width: 80%;
+      border-radius: 10px;
+    }
+    .trail {
+      background-color: rgb(249 250 251 / 100%);
+      text-align: center;
+      padding: 90px;
+    }
+    .trail button {
+      border-radius: 10px;
+    }
+    .footer {
+      display: flex;
+      gap: 100px;
+      justify-content: center;
+    }
+    .footer .footer_card ul {
+      list-style-type: none;
+      margin: 0px 5px;
+      padding: 0;
+      /* width: 200px; */
+      /* background-color: #f1f1f1; */
+    }
+    .footer .footer_card ul li a {
+      display: block;
+      color: #000;
+      padding: 10px 12px;
+    }
+
+    .footer .footer_card ul li a:hover {
+      /* background-color: #555;
+      color: white; */
+      text-decoration: underline;
+    }
+    .img-logo {
+      height: 40px;
+    }
+    .landwind-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .p-withlink {
+      text-align: center;
+    }
+    .different-logos {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-size: 30px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="logo">Landwind</div>
+      <ul class="hover">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Company">Company</a></li>
+        <li><a href="#Marketplace">Marketplace</a></li>
+        <li><a href="#Features">Features</a></li>
+        <li><a href="#Team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="button">Download</button>
+    </div>
+    <div class="content">
+      <div class="w-60">
+        <h1 class="h1">Building digitals Projects & Brands.</h1>
+        <p class="p">
+          This free and open-source landing page template was built using the
+          utility classes from Tailwind CSS and based on the components from the
+          Flowbite Library and the Blocks System.
+        </p>
+        <button>view on GitHub</button>
+        <button>Get Figma File</button>
+      </div>
+      <div class="w-40">
+        <img src="../images/hero.png" alt="" />
+      </div>
+    </div>
+    <div class="brand-partner">
+      <img src="../images/airbnb.png" alt="" />
+      <img src="../images/google.png" alt="" />
+      <img src="../images/microsoft.jpg" alt="" />
+      <img src="../images/Spotify.png" alt="" />
+      <img src="../images/mailchimp-sq.jpg" alt="" />
+      <img src="../images/mash.png" alt="" />
+    </div>
+    <div class="main">
+      <div class="font">
+        <h4>Work with tools you already use</h4>
+        <p>
+          Deliver great service experiences fast - without the complexity of
+          traditional ITSM solutions. Accelerate critical development work,
+          eliminate toil, and deploy changes with ease.
+        </p>
+        <hr />
+        <ul>
+          <li>Continuous integration and deployment</li>
+          <li>Development workflow</li>
+          <li>Knowledge management</li>
+        </ul>
+        <p>
+          Deliver great service experiences fast - without the complexity of
+          traditional ITSM solutions.
+        </p>
+      </div>
+      <div class="image">
+        <img src="../images/feature-1.png" alt="" />
+      </div>
+    </div>
+    <div class="one">
+      <div class="two">
+        <img src="../images/feature-2 (1).png" alt="" />
+      </div>
+      <div class="three">
+        <h5>We invest in the world’s potential</h5>
+        <p>
+          Deliver great service experiences fast - without the complexity of
+          traditional ITSM solutions. Accelerate critical development work,
+          eliminate toil, and deploy changes with ease.
+        </p>
+        <ul>
+          <li>Dynamic reports and dashboards</li>
+          <li>Templates for everyone</li>
+          <li>Development workflow</li>
+          <li>Limitless business automation</li>
+          <li>Knowledge management</li>
+        </ul>
+        <p>
+          Deliver great service experiences fast - without the complexity of
+          traditional ITSM solutions.
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="aa">
+        <p style="color: blueviolet">Trusted Worldwide</p>
+        <h2>Trusted by over 600 million users and 10,000 teams</h2>
+        <p>
+          Our rigorous security and compliance standards are at the heart of all
+          we do. We work tirelessly to protect you and your customers.
+        </p>
+        <hr />
+        <ul class="list">
+          <li>
+            <div class="icon">
+              <a href="#Explore Legality Guide">Explore Legality Guide</a>
+              <svg
+                style="color: blueviolet"
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M14 16.94v-4H5.08l-.03-2.01H14V6.94l5 5Z"
+                />
+              </svg>
+            </div>
+          </li>
+          <li>
+            <div>
+              <a href="#Visit the Trust Center">Visit the Trust Center</a>
+              <svg
+                style="color: blueviolet"
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M14 16.94v-4H5.08l-.03-2.01H14V6.94l5 5Z"
+                />
+              </svg>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="bb">
+        <div class="card">
+          <h2>99.99% uptime</h2>
+          <p>For Landwind, with zero maintenance downtime</p>
+        </div>
+        <div class="card">
+          <h2>600M+ Users</h2>
+          <p>Trusted by over 600 milion users around the world</p>
+        </div>
+        <div class="card">
+          <h2>100+ countries</h2>
+          <p>Have used Landwind to create functional websites</p>
+        </div>
+        <div class="card">
+          <h2>5+ Million</h2>
+          <p>Transactions per day</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <figure>
+        <div class="fig">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621c.537-.278 1.24-.375 1.929-.311c1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5a3.871 3.871 0 0 1-2.748-1.179m10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621c.537-.278 1.24-.375 1.929-.311c1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5a3.871 3.871 0 0 1-2.748-1.179"
+            />
+          </svg>
+        </div>
+        <p style="text-align: center">
+          "Landwind is just awesome. It contains tons of predesigned components
+          and pages starting from login screen to complex dashboard. Perfect
+          choice for your next SaaS application."
+        </p>
+        <figcaption>sflkfdj</figcaption>
+      </figure>
+    </div>
+    <div>
+      <div class="height">
+        <h2 style="font-size: 25px">Designed for business teams like yours</h2>
+        <p>
+          Here at Landwind we focus on markets where technology, innovation, and
+          capital can unlock long-term value and drive economic growth.
+        </p>
+      </div>
+      <div class="caaards">
+        <div class="firstcard">
+          <h2>Starter</h2>
+          <p>Best option for personal use & for your next project.</p>
+          <div class="handp">
+            <h1 style="font-size: 50px">$29</h1>
+            <p style="font-size: 20px">/month</p>
+          </div>
+          <ul class="cardlist">
+            <div class="check_list">
+              <svg
+                style="color: green"
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m10 15.17l9.192-9.191l1.414 1.414L10 17.999l-6.364-6.364l1.414-1.414z"
+                />
+              </svg>
+              <li>Individual configuration</li>
+            </div>
+
+            <div class="check_list">
+              <svg
+                style="color: green"
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m10 15.17l9.192-9.191l1.414 1.414L10 17.999l-6.364-6.364l1.414-1.414z"
+                />
+              </svg>
+              <li>No setup, or hidden fees</li>
+            </div>
+            <div class="check_list">
+              <svg
+                style="color: green"
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m10 15.17l9.192-9.191l1.414 1.414L10 17.999l-6.364-6.364l1.414-1.414z"
+                />
+              </svg>
+              <li>Team size: 1 developer</li>
+            </div>
+            <div class="check_list">
+              <svg
+                style="color: green"
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m10 15.17l9.192-9.191l1.414 1.414L10 17.999l-6.364-6.364l1.414-1.414z"
+                />
+              </svg>
+              <li>Premium support: 6 months</li>
+            </div>
+            <div class="check_list">
+              <svg
+                style="color: green"
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m10 15.17l9.192-9.191l1.414 1.414L10 17.999l-6.364-6.364l1.414-1.414z"
+                />
+              </svg>
+              <li>Free updates: 6 months</li>
+            </div>
+          </ul>
+          <button
+            class="button btn_padding"
+            style="width: 80%; border-radius: 10px"
+          >
+            Get started
+          </button>
+        </div>
+        <div class="firstcard">
+          <h2>Company</h2>
+          <p>Relevant for multiple users, extended & premium support.</p>
+          <div class="handp">
+            <h1 style="font-size: 50px">$99</h1>
+            <p style="font-size: 20px">/month</p>
+          </div>
+          <ul class="cardlist">
+            <div class="check_list">
+              <svg
+                style="color: green"
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m10 15.17l9.192-9.191l1.414 1.414L10 17.999l-6.364-6.364l1.414-1.414z"
+                />
+              </svg>
+              <li>Individual configuration</li>
+            </div>
+            <div class="check_list">
+              <svg
+                style="color: green"
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m10 15.17l9.192-9.191l1.414 1.414L10 17.999l-6.364-6.364l1.414-1.414z"
+                />
+              </svg>
+              <li>No setup, or hidden fees</li>
+            </div>
+            <div class="check_list">
+              <svg
+                style="color: green"
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m10 15.17l9.192-9.191l1.414 1.414L10 17.999l-6.364-6.364l1.414-1.414z"
+                />
+              </svg>
+              <li>Team size: 1 developer</li>
+            </div>
+            <div class="check_list">
+              <svg
+                style="color: green"
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m10 15.17l9.192-9.191l1.414 1.414L10 17.999l-6.364-6.364l1.414-1.414z"
+                />
+              </svg>
+              <li>Premium support: 6 months</li>
+            </div>
+            <div class="check_list">
+              <svg
+                style="color: green"
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m10 15.17l9.192-9.191l1.414 1.414L10 17.999l-6.364-6.364l1.414-1.414z"
+                />
+              </svg>
+              <li>Free updates: 6 months</li>
+            </div>
+          </ul>
+          <button
+            class="button btn_padding"
+            style="width: 80%; border-radius: 10px"
+          >
+            Get started
+          </button>
+        </div>
+        <div class="firstcard">
+          <h2>Enterprise</h2>
+          <p>Best for large scale uses and extended redistribution rights.</p>
+          <div class="handp">
+            <h1 style="font-size: 50px">$29</h1>
+            <p style="font-size: 20px">/month</p>
+          </div>
+          <ul class="cardlist">
+            <div class="check_list">
+              <svg
+                style="color: green"
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m10 15.17l9.192-9.191l1.414 1.414L10 17.999l-6.364-6.364l1.414-1.414z"
+                />
+              </svg>
+              <li>Individual configuration</li>
+            </div>
+
+            <div class="check_list">
+              <svg
+                style="color: green"
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m10 15.17l9.192-9.191l1.414 1.414L10 17.999l-6.364-6.364l1.414-1.414z"
+                />
+              </svg>
+              <li>No setup, or hidden fees</li>
+            </div>
+
+            <div class="check_list">
+              <svg
+                style="color: green"
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m10 15.17l9.192-9.191l1.414 1.414L10 17.999l-6.364-6.364l1.414-1.414z"
+                />
+              </svg>
+              <li>Team size: 1 developer</li>
+            </div>
+            <div class="check_list">
+              <svg
+                style="color: green"
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m10 15.17l9.192-9.191l1.414 1.414L10 17.999l-6.364-6.364l1.414-1.414z"
+                />
+              </svg>
+              <li>Premium support: 6 months</li>
+            </div>
+
+            <div class="check_list">
+              <svg
+                style="color: green"
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m10 15.17l9.192-9.191l1.414 1.414L10 17.999l-6.364-6.364l1.414-1.414z"
+                />
+              </svg>
+              <li>Free updates: 6 months</li>
+            </div>
+          </ul>
+          <button class="button btn_padding">Get started</button>
+        </div>
+      </div>
+    </div>
+    <div class="trail">
+      <h2>Start your free trial today</h2>
+      <p>Try Landwind Platform for 30 days. No credit card required.</p>
+      <button class="button">Free trail for 30 days</button>
+    </div>
+    <div class="footer">
+      <div class="footer_card">
+        <h2>COMPANY</h2>
+
+        <ul>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Careers">Careers</a></li>
+          <li><a href="#Brand Center">Brand Center</a></li>
+          <li><a href="#Blog">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer_card">
+        <h2>HELP CENTER</h2>
+
+        <ul>
+          <li><a href="#Discord Server">Discord Server</a></li>
+          <li><a href="#Twitter">Twitter</a></li>
+          <li><a href="#Facebook">Facebook</a></li>
+          <li><a href="#Contact Us">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer_card">
+        <h2>LEGAL</h2>
+
+        <ul>
+          <li><a href="#Privacy Policy">Privacy Policy</a></li>
+          <li><a href="#Licensing">Licensing</a></li>
+          <li><a href="#Terms">Terms</a></li>
+        </ul>
+      </div>
+      <div class="footer_card">
+        <h2>COMPANY</h2>
+        <ul>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Careers">Careers</a></li>
+          <li><a href="#Brand Center">Brand Center</a></li>
+          <li><a href="#Blog">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer_card">
+        <h2>DOWNLOAD</h2>
+        <ul>
+          <li><a href="#iOS">iOS</a></li>
+          <li><a href="#Android">Android</a></li>
+          <li><a href="#Windows">Windows</a></li>
+          <li><a href="#MacOS">MacOS</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <div class="landwind-logo">
+      <img
+        class="img-logo"
+        src="../images/land-wind-logo-3d-model-121711.webp"
+        alt=""
+      />
+      <h2>Landwind</h2>
+    </div>
+    <p class="p-withlink">
+      © 2021-2022 Landwind™. All Rights Reserved. Built witha
+      <a style="color: blueviolet; text-decoration: underline" href="Flowbite"
+        >Flowbite</a
+      >
+      and
+      <a
+        style="color: blueviolet; text-decoration: underline"
+        href="Tailwind CSS"
+        >Tailwind CSS</a
+      >
+    </p>
+    <div class="different-logos">
+      <div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+        >
+          <g fill="none">
+            <path
+              d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+            />
+            <path
+              fill="currentColor"
+              d="M13.5 21.888C18.311 21.164 22 17.013 22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 5.013 3.689 9.165 8.5 9.888V15H9a1.5 1.5 0 0 1 0-3h1.5v-2A3.5 3.5 0 0 1 14 6.5h.5a1.5 1.5 0 0 1 0 3H14a.5.5 0 0 0-.5.5v2H15a1.5 1.5 0 0 1 0 3h-1.5z"
+            />
+          </g>
+        </svg>
+      </div>
+      <div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 1024 1024"
+        >
+          <path
+            fill="currentColor"
+            d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3S645.3 585.4 645.3 512S585.4 378.7 512 378.7M911.8 512c0-55.2.5-109.9-2.6-165c-3.1-64-17.7-120.8-64.5-167.6c-46.9-46.9-103.6-61.4-167.6-64.5c-55.2-3.1-109.9-2.6-165-2.6c-55.2 0-109.9-.5-165 2.6c-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6c46.9 46.9 103.6 61.4 167.6 64.5c55.2 3.1 109.9 2.6 165 2.6c55.2 0 109.9.5 165-2.6c64-3.1 120.8-17.7 167.6-64.5c46.9-46.9 61.4-103.6 64.5-167.6c3.2-55.1 2.6-109.8 2.6-165M512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9S717.1 398.5 717.1 512S625.5 717.1 512 717.1m213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9s47.9 21.4 47.9 47.9a47.84 47.84 0 0 1-47.9 47.9"
+          />
+        </svg>
+      </div>
+      <div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="M22.213 5.656a8.384 8.384 0 0 1-2.402.658A4.195 4.195 0 0 0 21.649 4c-.82.488-1.719.83-2.655 1.015a4.182 4.182 0 0 0-7.126 3.814a11.874 11.874 0 0 1-8.621-4.37a4.168 4.168 0 0 0-.566 2.103c0 1.45.739 2.731 1.86 3.481a4.169 4.169 0 0 1-1.894-.523v.051a4.185 4.185 0 0 0 3.355 4.102a4.205 4.205 0 0 1-1.89.072A4.185 4.185 0 0 0 8.02 16.65a8.394 8.394 0 0 1-6.192 1.732a11.831 11.831 0 0 0 6.41 1.88c7.694 0 11.9-6.373 11.9-11.9c0-.18-.004-.362-.012-.541a8.497 8.497 0 0 0 2.086-2.164"
+          />
+        </svg>
+      </div>
+      <div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 32 32"
+        >
+          <path
+            fill="currentColor"
+            d="M28.436 15.1c-1.2-.203-2.45-.336-3.466-.372l-.18-.006c.042-.09.073-.15.083-.16c.022-.018.04-.094.042-.168c0-.04.018-.174.046-.35c.276.01.64.018 1.04.02c1.536.013 3.144.137 4.247.332c.657.116.874.112.39-.006c-.492-.12-1.948-.294-3.108-.37a35.645 35.645 0 0 0-2.555-.062c.02-.114.04-.24.064-.37c.092-.504.123-1.01.125-2.017c.002-1.56-.082-1.99-.59-3.024a5.011 5.011 0 0 0-.725-1.104c.247-.73.24-1.858-.015-2.848c-.21-.812-.285-.864-1.02-.708c-.625.133-1.125.314-1.766.637c-.304.153-.722.39-1.025.578c-.79-.277-1.607-.46-2.48-.56c-.883-.1-3.05-.044-3.82.098c-.75.14-1.428.31-2.04.51c-.307-.188-.75-.443-1.068-.603c-.644-.324-1.144-.504-1.77-.637c-.734-.157-.81-.104-1.02.708c-.26 1.003-.262 2.15-.005 2.878c.03.083.048.142.055.188c-1.042 1.312-1.382 2.78-1.156 4.83c.06.533.15 1.023.278 1.472c-.665-.004-1.61.02-2.294.064c-1.162.077-2.618.25-3.11.37c-.483.117-.268.12.39.006c1.103-.194 2.712-.32 4.248-.33c.29-.002.56-.008.794-.014c.07.237.15.463.24.678H7.26c-1.015.036-2.264.17-3.465.37c-.9.152-2.23.454-2.386.54c-.164.092-.03.072.667-.105c1.273-.322 2.928-.57 4.978-.74l.23-.02c.44 1.02 1.117 1.8 2.075 2.41c.586.372 1.525.755 1.998.815c.13.016.508.094.84.172c.333.078.984.195 1.446.262h.01l-.024.016c-.56.29-.924.744-1.17 1.457c-.11.033-.246.078-.394.13c-.53.18-.735.216-1.27.22c-.557.004-.69-.02-1.02-.176a2.968 2.968 0 0 1-1.234-1.134c-.5-.826-1.367-1.41-2.09-1.41c-.616 0-.733.25-.287.615c.672.55 1.174 1.11 1.38 1.538l.397.824c.11.227.342.535.564.748c.522.498 1.026.736 1.778.848c.504.074.628.074 1.223-.002c.287-.035.53-.076.746-.127v.854c0 1.766-.02 2.334-.09 2.5c-.133.316-.43.64-.717.787c-.287.147-.376.308-.255.456c.068.08.197.094.63.066c.822-.05 1.403-.355 1.7-.89c.094-.173.116-.52.146-2.32c.032-1.952.046-2.14.173-2.42c.076-.165.187-.345.25-.394c.103-.086.11.084.11 2.42c0 2.578-.027 2.89-.285 3.385c-.058.113-.168.26-.245.33c-.135.123-.192.438-.098.533c.155.154.932-.088 1.356-.422c.722-.572.808-1.045.814-4.46l.003-2.005l.22.02l.218.02l.036 2.62c.04 2.952.046 2.995.548 3.565c.285.322.572.5 1.04.64c.624.187.812-.103.392-.606c-.457-.548-.48-.757-.454-3.995c.017-2.076.017-2.076.15-1.955c.283.256.337.676.337 2.623c0 2.418.07 2.648.923 3.07c.4.195.51.22 1.022.22c.544.003.577-.005.597-.147c.017-.115-.05-.193-.304-.348a1.741 1.741 0 0 1-.708-.797c-.055-.126-.092-.958-.117-2.67c-.036-2.394-.044-2.503-.193-2.878c-.2-.504-.508-.902-.897-1.166c-.1-.066-.202-.12-.333-.162c.16-.016.317-.033.468-.055c1.572-.21 2.403-.384 3.07-.642c1.41-.543 2.365-1.445 2.882-2.724c.046-.114.092-.222.13-.31l.4.034c2.05.173 3.705.42 4.978.743c.698.178.83.2.668.106c-.152-.085-1.482-.386-2.382-.537zm-6.014-.032c-.233.512-.883 1.17-1.408 1.428c-.518.256-1.33.45-2.25.544c-.63.064-4.137.083-4.716.026c-1.917-.188-2.99-.557-3.783-1.296c-.75-.702-1.1-1.655-1.04-2.828c.04-.734.217-1.195.68-1.755c.42-.51.864-.825 1.386-.985c.438-.134 1.78-.146 3.582-.03c.797.05 1.456.05 2.252 0c1.886-.12 3.145-.106 3.61.038c.73.226 1.397.834 1.797 1.644c.18.362.216.516.242 1.075c.036.77-.097 1.587-.35 2.138zm-9.51-3.306c-1.073-.188-1.686 1.65-.863 2.587c.39.444.737.517 1.17.247c.403-.25.62-.72.62-1.328c0-.812-.368-1.408-.928-1.508zm6.513.11c-1.073-.188-1.687 1.647-.864 2.586c.393.445.74.52 1.174.247c.4-.25.62-.72.62-1.328c0-.808-.37-1.406-.93-1.505m-2.886 3.612c-.024.074-.136.184-.25.243c-.285.147-.49.096-.793-.18c-.187-.168-.272-.257-.33-.08c-.052.164.28.493.538.594c.236.095.405.098.66-.01c.255-.105.477-.39.477-.575c0-.172-.247-.164-.303.01zm-.318-.575c.163-.145.2-.44.044-.598s-.473-.133-.597.043c-.145.206-.068.363.035.53c.16.124.375.15.517.024z"
+          />
+        </svg>
+      </div>
+      <div>
+        <svg
+          height="32"
+          aria-hidden="true"
+          viewBox="0 0 16 16"
+          version="1.1"
+          width="32"
+          data-view-component="true"
+          class="octicon octicon-mark-github"
+        >
+          <path
+            d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"
+          ></path>
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
